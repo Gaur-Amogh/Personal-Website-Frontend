@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A polished interactive MERN stack portfolio for a recent CS graduate."
+    />
+    <title>Amogh Gaur | MERN Stack Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <noscript>
+      <style>
+        .reveal {
+          opacity: 1 !important;
+          transform: none !important;
+        }
+      </style>
+    </noscript>
+  </head>
+  <body>
+    <canvas id="field" aria-hidden="true"></canvas>
+    <div class="cursor-light" aria-hidden="true"></div>
+
+    <header class="site-header" data-glass>
+      <a class="brand" href="#top" aria-label="Go to top">
+        <span class="brand-mark">AG</span>
+        <span>Amogh Gaur</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#work">Work</a>
+        <a href="#system">System</a>
+        <a href="#stack">Stack</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="icon-button" id="themeToggle" aria-label="Toggle theme" title="Toggle theme">
+        <span class="sun-icon"></span>
+      </button>
+    </header>
+
+    <main id="top">
+      <section class="hero section-shell">
+        <div class="hero-copy reveal visible">
+          <div class="eyebrow">
+            <span class="live-dot"></span>
+            Recent CS Graduate / MERN Stack Developer
+          </div>
+          <h1>Designing things that actually feel good to use ;)</h1>
+          <p>
+            Amogh is a Computer Science graduate specializing in the MERN stack. He
+            designs and engineers fast, production-ready full-stack systems,
+            combining structured backend architectures with pixel-perfect,
+            highly responsive user interfaces.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-action magnetic" href="#work">
+              View proof
+              <span aria-hidden="true">-&gt;</span>
+            </a>
+            <button class="secondary-action magnetic" id="openCommand">
+              <span class="kbd">Ctrl K</span>
+              Explore
+            </button>
+          </div>
+        </div>
+
+        <div class="hero-product reveal visible" aria-label="Interactive portfolio preview">
+          <div class="device-frame" data-tilt>
+            <div class="device-topbar">
+              <span></span>
+              <span></span>
+              <span></span>
+              <p>Developer on steroids</p>
+            </div>
+            <div class="product-pane">
+              <div class="pane-header">
+                <span>Current Brain Usage</span>
+                <strong>92%</strong>
+              </div>
+              <div class="signal-graph">
+                <span style="--h: 36%"></span>
+                <span style="--h: 68%"></span>
+                <span style="--h: 48%"></span>
+                <span style="--h: 82%"></span>
+                <span style="--h: 62%"></span>
+                <span style="--h: 94%"></span>
+                <span style="--h: 74%"></span>
+              </div>
+              <div class="mini-grid">
+                <article>
+                  <small>UI/UX</small>
+                  <b>Smooth enough to flex</b>
+                </article>
+                <article>
+                  <small>DEVELOPMENT</small>
+                  <b>Built after 2am ideas</b>
+                </article>
+                <article>
+                  <small>WORKFLOW</small>
+                  <b>Ctrl + S every 7 seconds</b>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-shell proof-strip reveal" aria-label="Portfolio highlights">
+        <article>
+          <span>01</span>
+          <strong>Problem solving</strong>
+          <p>Turning “this shouldn’t work” into “fixed it.”</p>
+        </article>
+        <article>
+          <span>02</span>
+          <strong>Team leadership</strong>
+          <p>Keeping ideas, deadlines, and people moving in the same direction.</p>
+        </article>
+        <article>
+          <span>03</span>
+          <strong>Pressure handling</strong>
+          <p>Still debugging calmly while everything catches fire.</p>
+        </article>
+      </section>
+
+      <section class="section-shell split-section" id="work">
+        <div class="section-heading reveal">
+          <span class="eyebrow">What I’ve worked on</span>
+          <h2>A mix of engineering, leadership, and hands-on experience.</h2>
+        </div>
+        <div class="case-board reveal">
+          <div class="case-tabs" role="tablist" aria-label="Case studies">
+            <button class="case-tab active" data-case="i4c" role="tab">I4C Platform</button>
+            <button class="case-tab" data-case="medicrate" role="tab">Medicrate App</button>
+            <button class="case-tab" data-case="aqi" role="tab">AQI Forecast Framework</button>
+          </div>
+          <article class="case-study" id="caseStudy" data-tilt>
+            <div>
+              <p class="case-kicker">Pro industry experience</p>
+              <h3>Web Development Intern - I4C</h3>
+              <p>
+                Engineered and optimized web application modules using the MERN
+                stack for the Indian Cyber Crime Coordination Centre (I4C),
+                focusing heavily on responsive UI workflows and secure API
+                synchronization.
+              </p>
+            </div>
+            <div class="case-metrics">
+              <span><b>React.js</b> frontend</span>
+              <span><b>Express.js</b> backend</span>
+              <span><b>RESTful APIs</b> sync</span>
+            </div>
+            <ul class="case-points">
+              <li>Built reusable UI elements and managed complex application state to guarantee absolute frontend consistency.</li>
+              <li>Consumed secure RESTful endpoints to establish seamless client-to-server data communication channels.</li>
+              <li>Streamlined version control workflows and collaborative cycles using Git and GitHub within active dev pipelines.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-shell system-section" id="system">
+        <div class="section-heading reveal">
+          <span class="eyebrow">How I build</span>
+          <h2>Clean systems, thoughtful interactions, and adaptable engineering.</h2>
+        </div>
+        <div class="architecture reveal">
+          <article data-tilt>
+            <span class="node-icon">APPROACH</span>
+            <h3>Adaptive by design</h3>
+            <p>Building experiences that stay clean, scalable, and intuitive across different problems, teams, and workflows.</p>
+          </article>
+          <div class="connector"></div>
+          <article data-tilt>
+            <span class="node-icon">ENGINEERING</span>
+            <h3>Full-stack focused</h3>
+            <p>Combining responsive frontend systems with structured backend logic to create polished, production-ready applications.</p>
+          </article>
+          <div class="connector"></div>
+          <article data-tilt>
+            <span class="node-icon">MINDSET</span>
+            <h3>Calm under pressure</h3>
+            <p>Thriving in fast-moving environments through problem solving, collaboration, and attention to detail.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-shell stack-section" id="stack">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Capabilities</span>
+          <h2>My current development loadout.</h2>
+        </div>
+        <div class="stack-layout reveal">
+          <div class="skill-cloud" aria-label="Technical skills">
+            <button data-filter="all" class="active">All</button>
+            <button data-filter="frontend">Frontend</button>
+            <button data-filter="backend">Backend</button>
+            <button data-filter="data">Data</button>
+          </div>
+          <div class="skill-grid">
+            <article class="skill-card" data-skill="frontend">
+              <span>React</span>
+              <small>Hooks, Context API, Components</small>
+              <meter value="90" min="0" max="100"></meter>
+            </article>
+            <article class="skill-card" data-skill="frontend">
+              <span>JavaScript</span>
+              <small>Modern ES6+, Async Actions, Logic</small>
+              <meter value="85" min="0" max="100"></meter>
+            </article>
+            <article class="skill-card" data-skill="backend">
+              <span>Node.js / Express</span>
+              <small>RESTful Architecture, Routing, API Integration</small>
+              <meter value="80" min="0" max="100"></meter>
+            </article>
+            <article class="skill-card" data-skill="backend">
+              <span>MongoDB</span>
+              <small>Document Schemas, Mongoose Structures</small>
+              <meter value="75" min="0" max="100"></meter>
+            </article>
+            <article class="skill-card" data-skill="data">
+              <span>C++</span>
+              <small>Core Data Structures, Advanced Algorithms, Complexity Analysis</small>
+              <meter value="92" min="0" max="100"></meter>
+            </article>
+            <article class="skill-card" data-skill="data">
+              <span>Git + Deploy</span>
+              <small>Team workflows, branch management, Version Control</small>
+              <meter value="85" min="0" max="100"></meter>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-shell contact-section reveal" id="contact">
+        <div class="contact-copy">
+          <span class="eyebrow">Contact</span>
+          <h2>Reach out to Amogh</h2>
+          <p>
+            Building products is always better collaboratively. If you think we’d work well together, let’s talk!!
+          </p>
+          <div class="contact-directory" aria-label="Amogh contact details">
+            <span id="profileLocation">Location initializing...</span>
+            <a id="profileResume" href="#" target="_blank" rel="noreferrer">My lore so far (Resume ↗)</a>
+            <a id="profileEmail" href="#">Email initializing...</a>
+            <a id="profilePhone" href="#">Phone initializing...</a>
+            <a id="profileGithub" href="#" target="_blank" rel="noreferrer">GitHub initializing...</a>
+            <a id="profileLinkedin" href="#" target="_blank" rel="noreferrer">LinkedIn initializing...</a>
+          </div>
+        </div>
+        <form class="contact-card" id="contactForm">
+          <label>
+            <span>senders Name</span>
+            <input type="text" placeholder="Your Name..." autocomplete="name" />
+          </label>
+          <label>
+            <span>senders email</span>
+            <input type="email" placeholder="your-email@example.com" autocomplete="email" />
+          </label>
+          <label>
+            <span>content</span>
+            <textarea placeholder="Hi Amogh, we'd love to connect..." rows="4"></textarea>
+          </label>
+          <button class="primary-action" type="submit">Click to send</button>
+          <p class="form-status" id="formStatus" role="status"></p>
+        </form>
+      </section>
+    </main>
+
+    <dialog class="command-menu" id="commandMenu">
+      <div class="command-inner">
+        <div class="command-search">
+          <span>Ctrl K</span>
+          <input id="commandInput" placeholder="Jump to a section..." />
+        </div>
+        <div class="command-list" id="commandList">
+          <button data-target="#work">View selected work</button>
+          <button data-target="#system">See architecture</button>
+          <button data-target="#stack">Explore skills</button>
+          <button data-target="#contact">Contact section</button>
+        </div>
+      </div>
+    </dialog>
+
+    <script src="script.js"></script>
+  </body>
+</html>

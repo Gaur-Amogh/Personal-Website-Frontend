@@ -6,7 +6,7 @@ Interactive developer portfolio focused on modern frontend experiences, scalable
 
 ## Live Website
 
-https://your-vercel-link.vercel.app
+https://tinyurl.com/amo-personal
 
 ---
 
